@@ -12,7 +12,7 @@ const App = () => {
     <div className="row app-container">
       {countries.map((data) => (
         <CountryCard
-          key={data.callingCodes}
+          key={data.callingCodes + data.name}
           imgSrc={data.flag}
           CountryName={data.name}
           population={data.population}
