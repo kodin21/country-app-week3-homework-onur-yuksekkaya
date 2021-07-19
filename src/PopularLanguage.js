@@ -2,27 +2,25 @@ import React from 'react';
 import getService from './Service/GetService';
 
 const PopularLanguage = () => {
-  let myLog = [];
+  const myLog = [];
   const { countries } = getService();
-  for (let i = 0; i < countries.length; i++) {
-    for (let j = 0; j < countries[i].languages.length; j++) {
+  for (let i = 0; i < countries.length; i += 1) {
+    for (let j = 0; j < countries[i].languages.length; j += 1) {
       myLog.push(countries[i].languages[j].name);
     }
   }
 
   const counts = {};
-  myLog.forEach(function (x) {
+  myLog.forEach((x) => {
     counts[x] = (counts[x] || 0) + 1;
   });
 
-  var sortableLanguage = [];
-  for (var language in counts) {
-    sortableLanguage.push([language, counts[language]]);
-  }
+  const sortableLanguage = [];
+  Object.keys(counts).forEach((language) =>
+    sortableLanguage.push([language, counts[language]])
+  );
 
-  sortableLanguage.sort(function (a, b) {
-    return b[1] - a[1];
-  });
+  sortableLanguage.sort((a, b) => b[1] - a[1]);
 
   console.log(sortableLanguage);
 
