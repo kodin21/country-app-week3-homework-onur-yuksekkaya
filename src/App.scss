@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.app-container {
+  display: flex !important;
+  justify-content: space-evenly;
+}
+
+.country-card {
+  margin: 22px;
+  max-width: 19rem !important;
+  border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  height: 25rem;
+  cursor: pointer;
+  padding: 0 !important;
+  &:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .img-container {
+    width: 100%;
+    height: 12rem;
+    img {
+      width: 100%;
+      border-radius: 15px 15px 0px 0px;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .country-card-body {
+    margin-top: 30px;
+    line-height: 12px;
+    margin-left: 15px;
+    h2 {
+      margin-top: 15px;
+      margin-bottom: 30px;
+      color: #111517;
+      font-size: 22px;
+    }
+    p {
+      font-size: 15px;
+      font-weight: 600;
+      color: #111517;
+
+      span {
+        font-size: 15px;
+        font-weight: 500;
+        color: #111517;
+        margin-left: 2px;
+      }
+    }
+  }
+}
