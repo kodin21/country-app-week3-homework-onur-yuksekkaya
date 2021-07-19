@@ -2,7 +2,7 @@ const CountryCard = (props) => {
   return (
     <div className="country-card col-lg-3">
       <div className="img-container">
-        <img src={props.imgSrc} />
+        <img src={props.imgSrc} alt="country-flag" />
       </div>
       <div className="country-card-body my-auto">
         <h2>{props.CountryName}</h2>
