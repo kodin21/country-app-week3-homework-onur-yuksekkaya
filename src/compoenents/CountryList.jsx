@@ -1,10 +1,8 @@
-import React from "react";
-import GetService from "./Service/GetService";
-import CountryCard from "./compoenents/CountryCard";
-import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+import React from 'react';
+import GetService from '../Service/GetService';
+import CountryCard from './CountryCard';
 
-const App = () => {
+const CountryList = () => {
   const { countries } = GetService();
   return (
     <div className="row app-container">
@@ -22,5 +20,4 @@ const App = () => {
     </div>
   );
 };
-
-export default App;
+export default CountryList;

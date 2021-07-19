@@ -1,5 +1,5 @@
-import React from "react";
-import getService from "./Service/GetService";
+import React from 'react';
+import getService from './Service/GetService';
 
 const PopularLanguage = () => {
   let myLog = [];
