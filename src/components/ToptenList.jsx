@@ -1,17 +1,14 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PopularLanguage from '../PopularLanguage';
 
 const ToptenList = () => {
-  const returnData = PopularLanguage();
-  useEffect(() => {
-    console.log(returnData);
-  });
+  const { topTen } = PopularLanguage();
   return (
     <div>
       Topten Language
-      <ul>
-        {returnData.map((data) => (
-          <li>{data.name}</li>
+      <ul className="">
+        {topTen.map((data) => (
+          <li key={data.name}>{data.name}</li>
         ))}
       </ul>
     </div>
