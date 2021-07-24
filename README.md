@@ -1,4 +1,4 @@
-## [Live Demo (Still on Progress)=>](https://country-list-app-onuryks.netlify.app/)
+## [Live Demo ()=>](https://country-list-app-onuryks.netlify.app/)
 
 ### Ülke Listesi / Istatistikleri Uygulaması
 
