@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import GetService from './service/GetService';
+import GetService from './services/GetService';
 import Country from './components/Country';
 import CountryList from './components/CountryList';
 import ToptenList from './components/ToptenList';

@@ -1,4 +1,4 @@
-import GetService from './service/GetService';
+import GetService from './services/GetService';
 
 const PopularLanguage = () => {
   const uniqueCountryLanguages = new Set();

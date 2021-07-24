@@ -1,7 +1,7 @@
 /* eslint-disable no-template-curly-in-string */
 import React from 'react';
 import { Link } from 'react-router-dom';
-import GetService from '../service/GetService';
+import GetService from '../services/GetService';
 import CountryCard from './CountryCard';
 
 const CountryList = () => {

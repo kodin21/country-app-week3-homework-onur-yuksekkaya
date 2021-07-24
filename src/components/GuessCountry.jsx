@@ -1,5 +1,5 @@
 import React from 'react';
-import GetService from '../service/GetService';
+import GetService from '../services/GetService';
 
 const correctAnswer = Math.floor(Math.random() * 250);
 const wrongAnswer = Math.floor(Math.random() * 250);
