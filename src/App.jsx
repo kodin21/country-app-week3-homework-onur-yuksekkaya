@@ -1,7 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import GetService from './service/GetService';
 import Country from './components/Country';
+import CountryList from './components/CountryList';
 import ToptenList from './components/ToptenList';
 
 import './App.css';
@@ -13,7 +14,16 @@ const App = () => {
   return (
     <>
       <Router>
-        <Route exact path="/" component={ToptenList} />
+        <div className="d-flex top-bar">
+          <button type="button" className="back-button">
+            <Link to="/">Country List</Link>
+          </button>
+          <button type="button" className="back-button">
+            <Link to="/topten">Top 10 Language List</Link>
+          </button>
+        </div>
+        <Route exact path="/" component={CountryList} />
+        <Route exact path="/topten" component={ToptenList} />
         <Route
           path="/country/:code"
           render={(renderProps) => {
