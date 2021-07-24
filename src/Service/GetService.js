@@ -7,8 +7,7 @@ const GetService = () => {
   useEffect(() => {
     axios
       .get('https://restcountries.eu/rest/v2/all')
-      .then((response) => setCountries(response.data))
-      .catch((error) => console.log(error));
+      .then((response) => setCountries(response.data));
   }, []);
   return { countries };
 };
