@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, NavLink } from 'react-router-dom';
 import GetService from './services/GetService';
 import Country from './components/Country';
 import CountryList from './components/CountryList';
@@ -15,17 +15,23 @@ const App = () => {
     <>
       <Router>
         <div className="d-flex top-bar">
-          <Link to="/">
-            <button type="button" className="back-button">
-              Country List
-            </button>
-          </Link>
+          <NavLink
+            exact
+            to="/"
+            activeClassName="selected"
+            className="top-back-button"
+          >
+            Country List
+          </NavLink>
 
-          <Link to="/topten">
-            <button type="button" className="back-button">
-              Top 10 Language List
-            </button>
-          </Link>
+          <NavLink
+            exact
+            to="/topten"
+            activeClassName="selected"
+            className="top-back-button"
+          >
+            Top 10 Language List
+          </NavLink>
         </div>
         <Route exact path="/" component={CountryList} />
         <Route exact path="/topten" component={ToptenList} />

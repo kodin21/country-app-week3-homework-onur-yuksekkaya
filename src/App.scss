@@ -119,8 +119,11 @@ a {
 }
 
 .top-bar {
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(211, 211, 211);
   justify-content: center;
+  box-shadow: 0px -54px 47px -50px rgba(0, 0, 0, 0.22) inset;
+  -webkit-box-shadow: 0px -54px 47px -50px rgba(0, 0, 0, 0.22) inset;
+  -moz-box-shadow: 0px -54px 47px -50px rgba(0, 0, 0, 0.22) inset;
 }
 
 .topten {
@@ -145,4 +148,29 @@ a {
       }
     }
   }
+}
+
+.top-back-button {
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border: none;
+  margin-left: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-weight: 600;
+}
+
+.selected {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }

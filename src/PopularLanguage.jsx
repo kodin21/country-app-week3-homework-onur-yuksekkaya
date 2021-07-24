@@ -17,9 +17,8 @@ const PopularLanguage = () => {
       const sameLanguages = countryLanguages.filter((item) => item === element);
       result.push({ name: element, count: sameLanguages.length });
     });
-
-    result.sort((a, b) => a.count - b.count);
-    return result.slice(result.length - 10).reverse();
+    result.sort((b, a) => a.count - b.count);
+    return result.slice(0, 10);
   };
   const topTen = getCountries(countries);
 

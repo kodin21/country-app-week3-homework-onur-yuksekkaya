@@ -4,7 +4,7 @@ import PopularLanguage from '../PopularLanguage';
 const ToptenList = () => {
   const { topTen } = PopularLanguage();
   return (
-    <div className="topten">
+    <div className="topten mt-4">
       <h4>Topten Language</h4>
       <ol className="list">
         {topTen.map((data) => (

@@ -18,7 +18,7 @@ const CountryCard = (props) => {
         <p>
           Population: <span>{population}</span>
         </p>
-        <p>
+        <p className="pb-3">
           Capital: <span>{capital}</span>
         </p>
       </div>
