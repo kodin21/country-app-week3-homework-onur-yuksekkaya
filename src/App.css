@@ -1,6 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.row {
+  margin-right: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: black !important;
 }
 
 .app-container {
@@ -20,7 +29,7 @@ body {
           box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   -webkit-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  height: 25rem;
+  height: auto;
   cursor: pointer;
   padding: 0 !important;
 }
@@ -67,5 +76,69 @@ body {
   font-weight: 500;
   color: #111517;
   margin-left: 2px;
+}
+
+.flag-full {
+  padding-left: 30px !important;
+  margin-top: 10px !important;
+}
+
+.flag-full img {
+  width: 42rem !important;
+}
+
+.country-details {
+  margin-top: 10px !important;
+  padding-left: 30px !important;
+}
+
+.country-details .country-name {
+  text-align: center;
+  color: #111517;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 50px !important;
+}
+
+.country-details p {
+  margin-top: 10px !important;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111517;
+}
+
+.country-details p span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #111517;
+  margin-left: 2px;
+}
+
+.back-button {
+  background: white;
+  color: #111517;
+  border-radius: 6px;
+  width: 130px;
+  padding: 10px 20px;
+  -webkit-box-shadow: lightgrey 0px 0.1rem 0.5rem;
+          box-shadow: lightgrey 0px 0.1rem 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  border: none;
+  margin-left: 30px;
+}
+
+.back-button:hover {
+  -webkit-box-shadow: #9c9c9c 0px 0.1rem 0.5rem;
+          box-shadow: #9c9c9c 0px 0.1rem 0.5rem;
 }
 /*# sourceMappingURL=App.css.map */

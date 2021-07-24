@@ -1,10 +1,8 @@
-import React from 'react';
-
 const PopularLanguage = () => {
   const uniqueCountryLanguages = new Set();
   const countryLanguages = [];
   const result = [];
-
+  let topTen;
   const getCountries = async () => {
     const response = await fetch('https://restcountries.eu/rest/v2/all');
     const jsonData = await response.json();
@@ -27,16 +25,15 @@ const PopularLanguage = () => {
   };
 
   const showResult = () => {
-    console.table(result.slice(result.length - 10).reverse());
+    const data = result.slice(result.length - 10).reverse();
+    return data;
   };
 
-  getCountries().then(setResult).then(showResult);
-
-  return (
-    <>
-      <div>Hello</div>
-    </>
-  );
+  // eslint-disable-next-line max-len
+  // eslint-disable-next-line no-return-assign
+  const returnData = () =>
+    (topTen = getCountries().then(setResult).then(showResult));
+  return { returnData };
 };
 
 export default PopularLanguage;
