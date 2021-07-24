@@ -15,12 +15,17 @@ const App = () => {
     <>
       <Router>
         <div className="d-flex top-bar">
-          <button type="button" className="back-button">
-            <Link to="/">Country List</Link>
-          </button>
-          <button type="button" className="back-button">
-            <Link to="/topten">Top 10 Language List</Link>
-          </button>
+          <Link to="/">
+            <button type="button" className="back-button">
+              Country List
+            </button>
+          </Link>
+
+          <Link to="/topten">
+            <button type="button" className="back-button">
+              Top 10 Language List
+            </button>
+          </Link>
         </div>
         <Route exact path="/" component={CountryList} />
         <Route exact path="/topten" component={ToptenList} />

@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 
 const Country = (props) => (
   <div className="mt-5">
-    <button type="button" className="back-button">
-      <Link to="/">Go Back</Link>
-    </button>
+    <Link to="/" className="back-button" style={{ width: '10rem' }}>
+      Go Back
+    </Link>
+
     <div className="row">
       <div className="col-lg-6 flag-full">
         <img src={props.country.flag} alt="flag" />
